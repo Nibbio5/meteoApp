@@ -28,6 +28,12 @@ class _HeaderWidgetState extends State<HeaderWidget> {
   getAddress(lat, lon) async {
     List<Placemark> placemark = await placemarkFromCoordinates(lat, lon);
     Placemark place = placemark[0];
+
+    //the following two lines are for getting the time zone
+
+    //String tz = tzmap.latLngToTimezoneString(lat, lon);
+    //print('Montreal is in the $tz time zone.');
+
     setState(() {
       city = place.locality!;
     });
