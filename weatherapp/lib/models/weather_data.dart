@@ -2,8 +2,12 @@ import 'package:weatherapp_starter_project/models/weather_data_current.dart';
 
 class WeatherData{
 
-  final WeatherDataCurrent current;
+  final WeatherDataCurrent? current;
 
-  WeatherData(this.current);
+  WeatherData([this.current]);
+
+  //function to fetch the vbalues
+  WeatherDataCurrent getCurrentWeather() => current!;
+  
   
 }

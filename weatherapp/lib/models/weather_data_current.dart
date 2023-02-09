@@ -3,12 +3,14 @@
 class WeatherDataCurrent{
   final CurrentWeather current;
   WeatherDataCurrent({required this.current});
+
+  factory WeatherDataCurrent.fromJson(Map<String, dynamic> json) => WeatherDataCurrent(current: CurrentWeather.fromJson(json['current_weather']));
 }
 
 class CurrentWeather {
 	double? temperature;
-	int? windspeed;
-	int? winddirection;
+	double? windspeed;
+	double? winddirection;
 	int? weathercode;
 	String? time;
 
@@ -22,9 +24,9 @@ class CurrentWeather {
 
 	factory CurrentWeather.fromJson(Map<String, dynamic> json) {
 		return CurrentWeather(
-			temperature: (json['temperature'] as num?)?.toDouble(),
-			windspeed: json['windspeed'] as int?,
-			winddirection: json['winddirection'] as int?,
+			temperature: json['temperature'] as double?,
+			windspeed: json['windspeed'] as double?,
+			winddirection: json['winddirection'] as double?,
 			weathercode: json['weathercode'] as int?,
 			time: json['time'] as String?,
 		);

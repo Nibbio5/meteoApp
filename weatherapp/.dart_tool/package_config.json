@@ -146,6 +146,12 @@
       "languageVersion": "2.16"
     },
     {
+      "name": "lat_lng_to_timezone",
+      "rootUri": "file:///C:/Users/dan04/AppData/Local/Pub/Cache/hosted/pub.dev/lat_lng_to_timezone-0.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///C:/Users/dan04/AppData/Local/Pub/Cache/hosted/pub.dev/lints-2.0.1",
       "packageUri": "lib/",
@@ -248,7 +254,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2023-02-09T14:57:20.818947Z",
+  "generated": "2023-02-09T15:56:55.855556Z",
   "generator": "pub",
   "generatorVersion": "2.19.1"
 }
