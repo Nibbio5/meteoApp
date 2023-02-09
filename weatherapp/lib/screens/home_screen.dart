@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:weatherapp_starter_project/widgets/current_weather_widget.dart';
 import 'package:weatherapp_starter_project/widgets/header_widget.dart';
+import 'package:weatherapp_starter_project/widgets/hourly_data_widget.dart';
 import '../controller/global_controller.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -35,6 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     weatherDataCurrent:
                         globalController.getData().getCurrentWeather(),
                   ),
+                 /* HourlyDataWidget(weatherDataHourly: globalController.getData().getHourlyWeather())*/
                 ],
               )
             )

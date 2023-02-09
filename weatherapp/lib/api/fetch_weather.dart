@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:lat_lng_to_timezone/lat_lng_to_timezone.dart' as tzmap;
 import 'package:weatherapp_starter_project/models/weather_data_current.dart';
+import 'package:weatherapp_starter_project/models/weather_data_hourly.dart';
 
 import '../models/weather_data.dart';
 import 'package:http/http.dart' as http;
@@ -12,7 +13,8 @@ class FetchWeatherAPI {
   Future<WeatherData> processData(lat, lon) async {
     var response = await http.get(Uri.parse(apiURL(lat, lon)));
     var jsonString = jsonDecode(response.body);
-    weatherData = WeatherData(WeatherDataCurrent.fromJson(jsonString));
+    weatherData = WeatherData(WeatherDataCurrent.fromJson(jsonString),
+     /*WeatherDataHourly.fromJson(jsonString)*/);
     return weatherData!;
   }
 }

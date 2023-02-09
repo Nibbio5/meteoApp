@@ -8,7 +8,7 @@ class WeatherDataCurrent{
 }
 
 class CurrentWeather {
-	double? temperature;
+	int? temperature;
 	double? windspeed;
 	double? winddirection;
 	int? weathercode;
@@ -24,7 +24,7 @@ class CurrentWeather {
 
 	factory CurrentWeather.fromJson(Map<String, dynamic> json) {
 		return CurrentWeather(
-			temperature: json['temperature'] as double?,
+			temperature: (json['temperature'] as num?)?.round(),
 			windspeed: json['windspeed'] as double?,
 			winddirection: json['winddirection'] as double?,
 			weathercode: json['weathercode'] as int?,
