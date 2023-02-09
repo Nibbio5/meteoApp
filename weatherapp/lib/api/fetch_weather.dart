@@ -1,18 +1,18 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:lat_lng_to_timezone/lat_lng_to_timezone.dart' as tzmap;
-
-import '../model/weather.dart';
+import '../model/weather/weather_data.dart';
+import '../model/weather/weather_data_current.dart';
 
 class FetchWeatherAPI {
-  WeatherData? weather;
+  WeatherData? weatherData;
 
   // processing the data form the json
   Future<WeatherData> processData(lat, lon) async {
     var response = await http.get(Uri.parse(apiURL(lat, lon)));
     var jsonString = jsonDecode(response.body);
-    WeatherData weatherData = weatherDataFromJson(jsonString);
-    return weatherData;
+    weatherData = WeatherData(WeahterDataCurrent.fromJson(jsonString));
+    return weatherData!;
   }
 }
 

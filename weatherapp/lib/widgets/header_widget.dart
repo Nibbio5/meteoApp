@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+import 'package:weatherapp_starter_project/widgets/current_weather_widget.dart';
 
 import '../controller/global_controller.dart';
 
 class HeaderWidget extends StatefulWidget {
-  const HeaderWidget({super.key});
+  const HeaderWidget(CurrentWeatherWidget currentWeatherWidget, {super.key});
 
   @override
   State<HeaderWidget> createState() => _HeaderWidgetState();
