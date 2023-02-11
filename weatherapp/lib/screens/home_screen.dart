@@ -37,6 +37,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   CurrentWeatherWidget(
                     weatherDataCurrent:
                         globalController.getData().getCurrentWeather(),
+                    weatherDataHourly: 
+                        globalController.getData().getHourlyWeather(),
                   ),
                   const SizedBox(
                     height: 20,

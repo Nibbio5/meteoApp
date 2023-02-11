@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:weatherapp_starter_project/models/weather_data_current.dart';
+import 'package:weatherapp_starter_project/models/weather_data_hourly.dart';
+import 'package:weatherapp_starter_project/ulils/constants.dart';
 import 'package:weatherapp_starter_project/ulils/custom_colors.dart';
 
 class CurrentWeatherWidget extends StatelessWidget {
   final WeatherDataCurrent weatherDataCurrent;
-  const CurrentWeatherWidget({super.key, required this.weatherDataCurrent});
+  final WeatherDataHourly weatherDataHourly;
+  const CurrentWeatherWidget({super.key, required this.weatherDataCurrent, required this.weatherDataHourly});
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +24,12 @@ class CurrentWeatherWidget extends StatelessWidget {
         currentWeatherOtherDetailsWidget(),
       ],
     );
+  }
+
+  String getHumidity() {
+    //String x =  DateFormat('HH').format(DateTime.now());
+    String x = "${weatherDataHourly.hourly.relativehumidity2M[int.parse(DateFormat('HH').format(DateTime.now()))+1].toString()}%";
+    return x;
   }
 
   Widget currentWeatherOtherDetailsWidget() {
@@ -78,7 +88,7 @@ class CurrentWeatherWidget extends StatelessWidget {
             height: 20,
             width: 60,
             child: Text(
-              "${weatherDataCurrent.current.windspeed}%",
+              "${weatherDataHourly.hourly.cloudcover[int.parse(DateFormat('HH').format(DateTime.now()))+1].toString()}%",
               style: const TextStyle(fontSize: 12),
               textAlign: TextAlign.center,
             ),
@@ -87,7 +97,7 @@ class CurrentWeatherWidget extends StatelessWidget {
             height: 20,
             width: 60,
             child: Text(
-              "${weatherDataCurrent.current.windspeed}%",
+              getHumidity(),
               style: const TextStyle(fontSize: 12),
               textAlign: TextAlign.center,
             ),
@@ -121,9 +131,9 @@ class CurrentWeatherWidget extends StatelessWidget {
                 fontSize: 68,
                 color: CustomColors.textColorBlack,
               )),
-          TextSpan(
+          const TextSpan(
               text: "mist",
-              style: const TextStyle(
+              style: TextStyle(
                 fontWeight: FontWeight.w400,
                 fontSize: 14,
                 color: Colors.grey,

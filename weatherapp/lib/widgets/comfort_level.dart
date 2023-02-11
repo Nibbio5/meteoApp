@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ComfortLevel extends StatelessWidget {
-  final Wea
+  //final
   const ComfortLevel({super.key});
 
   @override
