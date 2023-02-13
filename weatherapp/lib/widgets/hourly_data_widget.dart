@@ -79,13 +79,13 @@ class HourlyDataWidget extends StatelessWidget {
 }
 
 class HourlyDetails extends StatelessWidget {
-  int temp;
-  String time;
-  int index;
-  int cardIndex;
-  int weathercode;
+  final int temp;
+  final String time;
+  final int index;
+  final int cardIndex;
+  final int weathercode;
 
-  HourlyDetails(
+  const HourlyDetails(
       {super.key,
       required this.cardIndex,
       required this.index,

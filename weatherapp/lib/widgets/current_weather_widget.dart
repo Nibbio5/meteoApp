@@ -4,6 +4,7 @@ import 'package:weatherapp_starter_project/models/weather_data_current.dart';
 import 'package:weatherapp_starter_project/models/weather_data_hourly.dart';
 import 'package:weatherapp_starter_project/ulils/constants.dart';
 import 'package:weatherapp_starter_project/ulils/custom_colors.dart';
+import 'package:weatherapp_starter_project/ulils/methods.dart';
 
 class CurrentWeatherWidget extends StatelessWidget {
   final WeatherDataCurrent weatherDataCurrent;
@@ -111,12 +112,14 @@ class CurrentWeatherWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        Image.asset(
+        Container(
+         width: 80,
+        child: Image.asset(
+          //getDayOrNight(weatherDataCurrent.current.weathercode!),
           "assets/weather/prova.png",
-          //"assets/images/${weatherDataCurrent.current.weathercode}.png",
-          height: 80,
           width: 80,
-        ),
+          height: 80,
+        )),
         Container(
           height: 50,
           width: 1,
