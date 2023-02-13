@@ -1,10 +1,10 @@
 import 'cities.dart';
 
 class CitiesData {
-  final List<Cityes>? cities;
+  final dataCities? cities;
 
   CitiesData([this.cities]);
 
   //function to fetch the vbalues
-  List<Cityes> getCurrentWeather() => cities!;
+  dataCities getCurrentWeather() => cities!;
 }

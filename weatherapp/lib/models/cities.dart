@@ -4,6 +4,15 @@ List<Cityes> cityesFromJson(String str) => List<Cityes>.from(json.decode(str).ma
 
 String cityesToJson(List<Cityes> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
+class dataCities{
+  final List<Cityes> cities;
+  dataCities({required this.cities});
+
+  factory dataCities.fromJson(String jsn) => 
+  dataCities(cities: List<Cityes>.from(json.decode(jsn).map((x) => Cityes.fromJson(x))));
+}
+
+
 class Cityes {
     Cityes({
         required this.placeId,

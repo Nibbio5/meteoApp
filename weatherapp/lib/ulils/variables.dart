@@ -74,3 +74,4 @@ var weatherCodes2 = {
   99: 'thunderstorm',//
   100: "prova"
 };
+

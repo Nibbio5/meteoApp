@@ -1,15 +1,17 @@
+import 'dart:convert';
+
 import 'package:weatherapp_starter_project/models/cities.dart';
 import 'package:weatherapp_starter_project/models/citiesData.dart';
 import 'package:http/http.dart' as http;
 
-class FetchWeatherAPI {
-  CitiesData? cityesData;
+class FetchCityAPI {
+  List<Cityes>? cityesData;
 
   //processing data on response to jsonn
-  Future<CitiesData> processData(s) async {
+  Future<List<Cityes>> processCities(String s) async {
     var response = await http.get(Uri.parse(apiURL(s)));
-    cityesData = CitiesData(
-        cityesFromJson(response.body));
+    var jsonString = jsonDecode(response.body);
+    //cityesData = CitiesData.cityesFromJson();
     return cityesData!;
   }
 }

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:weatherapp_starter_project/models/weather_data_current.dart';
 import 'package:weatherapp_starter_project/models/weather_data_hourly.dart';
-import 'package:weatherapp_starter_project/ulils/constants.dart';
 import 'package:weatherapp_starter_project/ulils/custom_colors.dart';
 import 'package:weatherapp_starter_project/ulils/methods.dart';
 
