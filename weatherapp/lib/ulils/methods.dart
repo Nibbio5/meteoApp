@@ -21,9 +21,9 @@ var weatherCodes2 = {
   73: 'show_fall',//
   75: 'show_fall_heavy',//
   77: 'show_grains',//
-  80: 'rain_showers_light',
+  80: 'rain_slight',
   81: 'rain_moderate',//
-  82: 'rain_showers_heavy',
+  82: 'rain_heavy',
   85: 'show_fall',//
   86: 'show_fall',//
   95: 'thunderstorm',//
@@ -38,7 +38,7 @@ String getDayOrNight(int code) {
     int num = int.parse(DateFormat('H').format(DateTime.now()));
 
     num > 6 && num < 20
-        ? str = "assets/weather/${weatherCodes2[99]}.png"                                // "assets/weather/${weatherCodes2[code]}d.png"
+        ? str = "assets/weather/${weatherCodes2[code]}d.png"                                // "assets/weather/${weatherCodes2[code]}d.png"
         : str = "assets/weather/${weatherCodes2[code]}n.png";
   } else {
     str =

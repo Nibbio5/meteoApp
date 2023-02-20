@@ -14,6 +14,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //theme data
+    //dynamic colors
+    //rives
     return const GetMaterialApp(
       home: HomeScreen(),
       title: "Meteo",

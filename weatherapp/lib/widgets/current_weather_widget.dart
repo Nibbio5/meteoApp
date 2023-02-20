@@ -114,8 +114,8 @@ class CurrentWeatherWidget extends StatelessWidget {
         Container(
          width: 80,
         child: Image.asset(
-          //getDayOrNight(weatherDataCurrent.current.weathercode!),
-          "assets/weather/prova.png",
+          getDayOrNight(weatherDataCurrent.current.weathercode!),
+          //"assets/weather/prova.png",
           width: 80,
           height: 80,
         )),

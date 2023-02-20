@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		UggxnV4SS7BvH+rGA/VBQACghiY=
+		r6Lb8Hmval3Cs+o+1pF6IApHJbg=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		HawjpQsCq65ACkmFZ9tzwPEfBf0=
+		xUtBXkzdgTHUu325V+JEQcDUr/8=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		F1LfstKmui2wWqhdiBUeAp02OtQ=
+		ui87EsmJL86jmW1zskwvTOUHzC0=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		SsUxJj+x3I+eewrXdj5/rAd2xo0=
+		ciFtBRb4wfjhvL6eq1ioqnl1BFM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/clouds.png</key>
 		<data>
@@ -79,6 +79,74 @@
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/windspeed.png</key>
 		<data>
 		fgtx+YhJVWpUBNelBCHp4amc0vM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/clear_sky.png</key>
+		<data>
+		IroPS1WzgixVWN9ZlOifiQEtD8k=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/clear_skyd.png</key>
+		<data>
+		IroPS1WzgixVWN9ZlOifiQEtD8k=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/clear_skyn.png</key>
+		<data>
+		OYn469Uu6LyIev7+E6V2HjfbVio=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/cloudy.png</key>
+		<data>
+		kHCH39jp7hWrMm5AajZ7p03RFXI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/fog.png</key>
+		<data>
+		SZIRwxk7HiddIubomud8IJz9C3E=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/freezing_light.png</key>
+		<data>
+		BwvdcNn7BMyqKSaMxbZt/Uyy4h8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/freezing_rain.png</key>
+		<data>
+		eZy0u0JEx9pLnfOC7Rd6ajogDxE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/mainly_clear.png</key>
+		<data>
+		ELsFlaRr1Uy8MSgm2MkWhzMs4BQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/mainly_cleard.png</key>
+		<data>
+		ELsFlaRr1Uy8MSgm2MkWhzMs4BQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/mainly_clearn.png</key>
+		<data>
+		6snCdhM246GgPLpSfiN4Eb5B0Sg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/rain_heavy.png</key>
+		<data>
+		b95kTAPRXLyU77US/Mazx8FQCC4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/rain_moderate.png</key>
+		<data>
+		Q6q/JID+/7sym8zktuJlQSG5fs4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/rain_slight.png</key>
+		<data>
+		bG1kjg735gnTQjX4H/6BadgtHn4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/show_fall.png</key>
+		<data>
+		NitljNAy7Z8rYQEkzJ8TI164Uy4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/snow_fall_heavy.png</key>
+		<data>
+		+IE5ce9plObArJKHlEBX8nMzloo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/snow_grains.png</key>
+		<data>
+		/mPf+5nISM6L4gOUjU3FYWUVNYQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/thunderstorm.png</key>
+		<data>
+		SwXwrlg25P0BggRJZzzz/rnth8g=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/weather/01d.png</key>
 		<data>
@@ -152,9 +220,77 @@
 		<data>
 		Ales5XkwiDNA23LZqws+ZwuRC2M=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/clear_sky.png</key>
+		<data>
+		IroPS1WzgixVWN9ZlOifiQEtD8k=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/clear_skyn.png</key>
+		<data>
+		OYn469Uu6LyIev7+E6V2HjfbVio=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/clearskyd.png</key>
+		<data>
+		IroPS1WzgixVWN9ZlOifiQEtD8k=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/cloudy.png</key>
+		<data>
+		kHCH39jp7hWrMm5AajZ7p03RFXI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/fog.png</key>
+		<data>
+		SZIRwxk7HiddIubomud8IJz9C3E=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/freezing_light.png</key>
+		<data>
+		BwvdcNn7BMyqKSaMxbZt/Uyy4h8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/freezing_rain.png</key>
+		<data>
+		eZy0u0JEx9pLnfOC7Rd6ajogDxE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/mainly_clear.png</key>
+		<data>
+		ELsFlaRr1Uy8MSgm2MkWhzMs4BQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/mainly_cleard.png</key>
+		<data>
+		ELsFlaRr1Uy8MSgm2MkWhzMs4BQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/mainly_clearn.png</key>
+		<data>
+		6snCdhM246GgPLpSfiN4Eb5B0Sg=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/weather/prova.png</key>
 		<data>
 		N0dMSBtDTzQcD+qb2mqtc0ITb7w=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/rain_heavy.png</key>
+		<data>
+		b95kTAPRXLyU77US/Mazx8FQCC4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/rain_moderate.png</key>
+		<data>
+		Q6q/JID+/7sym8zktuJlQSG5fs4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/rain_slight.png</key>
+		<data>
+		bG1kjg735gnTQjX4H/6BadgtHn4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/show_fall.png</key>
+		<data>
+		NitljNAy7Z8rYQEkzJ8TI164Uy4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/snow_fall_heavy.png</key>
+		<data>
+		+IE5ce9plObArJKHlEBX8nMzloo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/snow_grains.png</key>
+		<data>
+		/mPf+5nISM6L4gOUjU3FYWUVNYQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/thunderstorm.png</key>
+		<data>
+		SwXwrlg25P0BggRJZzzz/rnth8g=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -166,7 +302,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		EaVe5jspHgtkLvkcR/V3J3VcIH4=
+		xhpeintEsFa1Q3vgZmqrrjGsLSk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -373,7 +509,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cnnLrAiNnAvuab5dJUzNt0FqGvEMoUnJHQECaMbi0pc=
+			Tyxm17zQoKoWmTgwdNyE9uykW/ZRF2ILkW29S42kPwo=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -387,14 +523,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4xzZbfmZbNiCxNEFE7VH1qujcJV2j86UrZywq2ubls0=
+			ikgy5Ozxei6z3mQYzmmT/TPhd7jR4d8iF8L5/S2qe64=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S3dOkAX7Xhy0AQmUh6V8/8tfW6SQBgA8kgPTNG8ikdY=
+			41udCVEC7kQHqchbP9mj64WI55ZMyHAx9jT2chBqN/o=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -408,7 +544,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ouh3BSYCbcmxqG35uFpV2v/Fc14CwvqCziEgIvhzsHQ=
+			HF/rJmovi+DGl7QmI3z93R97YWyNUuSQFF+KzBaZb1Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/clouds.png</key>
@@ -430,6 +566,125 @@
 			<key>hash2</key>
 			<data>
 			9XtyJ/7vog9Mv+wGXmSBMYUw2PsRC2wmaYGJeFttsG0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/clear_sky.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vl55vf/s2LL6cqQe/l4cmyBISft74Vxgp1M4G9OuP+o=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/clear_skyd.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vl55vf/s2LL6cqQe/l4cmyBISft74Vxgp1M4G9OuP+o=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/clear_skyn.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			93TE/KgrPPrwbZ6SOukGG3DaC5H1XdPEJ/JSkr00ass=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/cloudy.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YNunOw6sbG2k7gDNMbdeEhpzbXnZVXsuypNybsWIyso=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/fog.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oeMNjaKjoVu0gEwLbs+aKyOsah5M1lBiXJKuqczY+90=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/freezing_light.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3DqdR81y8anHHZbLXEq6gJZJNlDTAqhTq7O3VEOZtOs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/freezing_rain.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OwqX3C04ToUskkla1ehsPtlxRXlFitJ5A72FiN6fLvI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/mainly_clear.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NwCtlPs5EKwnAvukXKh4GQfsiRUNPStzeub1J/oAA7w=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/mainly_cleard.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NwCtlPs5EKwnAvukXKh4GQfsiRUNPStzeub1J/oAA7w=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/mainly_clearn.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YFP/FDnDStZRErXz/fLSbgrFMJIQN3oMaCzBBDrXrAg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/rain_heavy.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RZ8DYUD/+uY6L+FKkGP8QLXMtPaBAy4j4IEP9MzKXoA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/rain_moderate.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nCXr+lc5ptGoBBR4mL8QWpdIXUtVrJi1zeebStsO47w=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/rain_slight.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yu9pA5rwrgxt8wpwCavn9s10DNDszm1S1+U2HeIT5V0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/show_fall.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W1s1598KZoko23uVuIKXoSfTPKyFiFVMrmbmlsGOikA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/snow_fall_heavy.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3aJsVajyrJ18wTL6W64kjZ63NryLbzk/cS+XHYlWgdg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/snow_grains.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ot2f0ERzs3Lp5l4WKJfX5sHFPaXqBsY3mfMEQ7c9MEI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/myWeather/thunderstorm.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nFpWPXf3zs1zMBitX+HiQRXuNGedKgPR9bLMX34y3mQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/weather/01d.png</key>
@@ -558,11 +813,130 @@
 			/yb13393clcSp6Y3LxaqJFMoWr5aUJn91LhX9Icazoo=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/clear_sky.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vl55vf/s2LL6cqQe/l4cmyBISft74Vxgp1M4G9OuP+o=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/clear_skyn.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			93TE/KgrPPrwbZ6SOukGG3DaC5H1XdPEJ/JSkr00ass=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/clearskyd.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vl55vf/s2LL6cqQe/l4cmyBISft74Vxgp1M4G9OuP+o=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/cloudy.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YNunOw6sbG2k7gDNMbdeEhpzbXnZVXsuypNybsWIyso=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/fog.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oeMNjaKjoVu0gEwLbs+aKyOsah5M1lBiXJKuqczY+90=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/freezing_light.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3DqdR81y8anHHZbLXEq6gJZJNlDTAqhTq7O3VEOZtOs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/freezing_rain.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OwqX3C04ToUskkla1ehsPtlxRXlFitJ5A72FiN6fLvI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/mainly_clear.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NwCtlPs5EKwnAvukXKh4GQfsiRUNPStzeub1J/oAA7w=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/mainly_cleard.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NwCtlPs5EKwnAvukXKh4GQfsiRUNPStzeub1J/oAA7w=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/mainly_clearn.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YFP/FDnDStZRErXz/fLSbgrFMJIQN3oMaCzBBDrXrAg=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/weather/prova.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			wURc8MTlIFhKrQkczMYaZQ7w1OWy15eDNLmy4Qstc8c=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/rain_heavy.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RZ8DYUD/+uY6L+FKkGP8QLXMtPaBAy4j4IEP9MzKXoA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/rain_moderate.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nCXr+lc5ptGoBBR4mL8QWpdIXUtVrJi1zeebStsO47w=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/rain_slight.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yu9pA5rwrgxt8wpwCavn9s10DNDszm1S1+U2HeIT5V0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/show_fall.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W1s1598KZoko23uVuIKXoSfTPKyFiFVMrmbmlsGOikA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/snow_fall_heavy.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3aJsVajyrJ18wTL6W64kjZ63NryLbzk/cS+XHYlWgdg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/snow_grains.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ot2f0ERzs3Lp5l4WKJfX5sHFPaXqBsY3mfMEQ7c9MEI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/weather/thunderstorm.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nFpWPXf3zs1zMBitX+HiQRXuNGedKgPR9bLMX34y3mQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -583,7 +957,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6KG6SZrRg6agqFq77C8JmhklHSsQvyY6bAfJKpiRVh8=
+			G7MBrDa0m5BFSm7g3w+muhvsFFOW8JExZuRXwkRRDm8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

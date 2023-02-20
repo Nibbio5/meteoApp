@@ -1,6 +1,7 @@
 import 'package:easy_search_bar/easy_search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:weatherapp_starter_project/controller/citysearcher.dart';
 import 'package:weatherapp_starter_project/models/citiesData.dart';
 import 'package:weatherapp_starter_project/ulils/custom_colors.dart';
 import 'package:weatherapp_starter_project/widgets/current_weather_widget.dart';
@@ -31,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: EasySearchBar(
           title: const Text('search'),
-          onSearch: (value) => setState(() => _suggestions[0] =   value  /*searchValue = value*/   ),
+          onSearch: (value) => setState(() => _suggestions[0]=   getCity(value).toString()  /*searchValue = value*/   ),
           suggestions: _suggestions
         ),
       body: SafeArea(

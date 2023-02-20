@@ -27,8 +27,7 @@ class FetchWeatherAPI {
 String apiURL(var lat, var lon) {
   String sartTime = DateFormat("y-MM-d").format(DateTime.now());
   String endTime =
-      DateFormat("y-MM-d").format(DateTime.now().add(Duration(days: 7)));
-
+  DateFormat("y-MM-d").format(DateTime.now().add(const Duration(days: 7)));
   String tz = tzmap.latLngToTimezoneString(lat, lon).replaceAll("/", "%2F");
   print(tz);
   String url;

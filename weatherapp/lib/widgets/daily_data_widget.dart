@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:weatherapp_starter_project/models/weather_data_daily.dart';
+import 'package:weatherapp_starter_project/ulils/methods.dart';
 
 import '../ulils/custom_colors.dart';
 
@@ -66,7 +67,10 @@ class DailyDataWidget extends StatelessWidget {
                         SizedBox(
                           height: 30,
                           width: 30,
-                          child: Image.asset("assets/weather/01d.png"),
+                          child: Image.asset(
+                             getDayOrNight(weatherDataDaily.daily.weathercode[index]),
+                            //"assets/weather/01d.png"
+                            ),
                         ),
                         Text(
                           "${weatherDataDaily.daily.temperature2MMax[index + 1]}°/${weatherDataDaily.daily.temperature2MMin[index + 1]}°",

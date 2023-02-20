@@ -5,6 +5,7 @@ import 'package:weatherapp_starter_project/controller/global_controller.dart';
 
 import 'package:weatherapp_starter_project/models/weather_data_hourly.dart';
 import 'package:weatherapp_starter_project/ulils/custom_colors.dart';
+import 'package:weatherapp_starter_project/ulils/methods.dart';
 
 class HourlyDataWidget extends StatelessWidget {
   final WeatherDataHourly weatherDataHourly;
@@ -69,7 +70,7 @@ class HourlyDataWidget extends StatelessWidget {
                   temp: weatherDataHourly.hourly.temperature2M[index].round(),
                   time: weatherDataHourly.hourly.time[index],
                   weathercode:
-                      weatherDataHourly.hourly.temperature2M[index].round(),
+                      weatherDataHourly.hourly.weathercode[index].round(),
                 ),
               ))));
         },
@@ -115,7 +116,8 @@ class HourlyDetails extends StatelessWidget {
         Container(
           margin: const EdgeInsets.all(5),
           child: Image.asset(
-            "assets/weather/04n.png",
+            getDayOrNight(weathercode),
+            //"assets/weather/04n.png",
             height: 40,
             width: 40,
           ),
