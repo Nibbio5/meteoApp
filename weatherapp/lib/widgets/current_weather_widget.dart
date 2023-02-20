@@ -4,6 +4,7 @@ import 'package:weatherapp_starter_project/models/weather_data_current.dart';
 import 'package:weatherapp_starter_project/models/weather_data_hourly.dart';
 import 'package:weatherapp_starter_project/ulils/custom_colors.dart';
 import 'package:weatherapp_starter_project/ulils/methods.dart';
+import 'package:weatherapp_starter_project/ulils/variables.dart';
 
 class CurrentWeatherWidget extends StatelessWidget {
   final WeatherDataCurrent weatherDataCurrent;
@@ -133,9 +134,9 @@ class CurrentWeatherWidget extends StatelessWidget {
                 fontSize: 68,
                 color: CustomColors.textColorBlack,
               )),
-          const TextSpan(
-              text: "mist",
-              style: TextStyle(
+          TextSpan(
+              text: weatherStats[weatherDataCurrent.current.weathercode!].toString().replaceAll('_', ' '),
+              style: const TextStyle(
                 fontWeight: FontWeight.w400,
                 fontSize: 14,
                 color: Colors.grey,

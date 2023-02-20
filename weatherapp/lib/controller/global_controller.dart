@@ -1,9 +1,7 @@
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
-import 'package:weatherapp_starter_project/api/fetch_cityes.dart';
 import 'package:weatherapp_starter_project/api/fetch_weather.dart';
-import 'package:weatherapp_starter_project/models/citiesData.dart';
 import 'package:weatherapp_starter_project/models/weather_data.dart';
 
 class GlobalController extends GetxController {
@@ -14,32 +12,16 @@ class GlobalController extends GetxController {
   final RxInt _currentIndex = 0.obs;
   RxString _cityName = "".obs;
 
-  //RxString _name = "".obs;
-
   // instance for them to be called
   RxBool checkLoading() => _isLoading;
   RxDouble getLatitude() => _latitude;
   RxDouble getLongitude() => _longitude;
-  //RxString getName() => _name;
   RxString getCityName() => _cityName;
-
-  final weatherData = WeatherData().obs;
-  Rx<CitiesData> citiesData = CitiesData().obs;
+  var weatherData = WeatherData().obs;
 
   WeatherData getData() {
     return weatherData.value;
   }
-
-  CitiesData getCitiesData() {
-    return citiesData.value;
-  }
-
-  /* getCities(String ss) async {
-    _name.value = ss;
-    return FetchCityAPI.processCities(_name as String).then((value) {
-      citiesData.value = value;
-    });
-  }*/
 
   @override
   void onInit() {

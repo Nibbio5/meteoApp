@@ -13,7 +13,7 @@ const weatherCodes = {
 };
 
 const weatherStats = {
-  0: 'clear sky',
+  0: 'clear_sky',
   1: 'mainly_clear',
   2: 'partly_cloudy',
   3: 'overcast',

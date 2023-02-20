@@ -10,14 +10,12 @@ class WeatherDataCurrent{
 class CurrentWeather {
 	int? temperature;
 	double? windspeed;
-	double? winddirection;
 	int? weathercode;
 	String? time;
 
 	CurrentWeather({
 		this.temperature, 
-		this.windspeed, 
-		this.winddirection, 
+		this.windspeed,  
 		this.weathercode, 
 		this.time, 
 	});
@@ -26,7 +24,6 @@ class CurrentWeather {
 		return CurrentWeather(
 			temperature: (json['temperature'] as num?)?.round(),
 			windspeed: json['windspeed'] as double?,
-			winddirection: json['winddirection'] as double?,
 			weathercode: json['weathercode'] as int?,
 			time: json['time'] as String?,
 		);
@@ -37,7 +34,6 @@ class CurrentWeather {
 	Map<String, dynamic> toJson() => {
 				'temperature': temperature,
 				'windspeed': windspeed,
-				'winddirection': winddirection,
 				'weathercode': weathercode,
 				'time': time,
 			};

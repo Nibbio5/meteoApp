@@ -29,7 +29,6 @@ var weatherCodes2 = {
   95: 'thunderstorm',//
   96: 'thunderstorm',//
   99: 'thunderstorm',//
-  100: "prova"
 };
 
 String getDayOrNight(int code) {
