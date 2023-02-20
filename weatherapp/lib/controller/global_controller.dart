@@ -1,3 +1,4 @@
+import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:weatherapp_starter_project/api/fetch_cityes.dart';
@@ -8,16 +9,19 @@ import 'package:weatherapp_starter_project/models/weather_data.dart';
 class GlobalController extends GetxController {
   //create various variables
   final RxBool _isLoading = true.obs;
-  final RxDouble _latitude = 0.0.obs;
-  final RxDouble _longitude = 0.0.obs;
+  RxDouble _latitude = 0.0.obs;
+  RxDouble _longitude = 0.0.obs;
   final RxInt _currentIndex = 0.obs;
-  RxString _name = "".obs;
+  RxString _cityName = "".obs;
+
+  //RxString _name = "".obs;
 
   // instance for them to be called
   RxBool checkLoading() => _isLoading;
   RxDouble getLatitude() => _latitude;
   RxDouble getLongitude() => _longitude;
-  RxString getName() => _name;
+  //RxString getName() => _name;
+  RxString getCityName() => _cityName;
 
   final weatherData = WeatherData().obs;
   Rx<CitiesData> citiesData = CitiesData().obs;
@@ -30,7 +34,7 @@ class GlobalController extends GetxController {
     return citiesData.value;
   }
 
- /* getCities(String ss) async {
+  /* getCities(String ss) async {
     _name.value = ss;
     return FetchCityAPI.processCities(_name as String).then((value) {
       citiesData.value = value;
@@ -40,14 +44,14 @@ class GlobalController extends GetxController {
   @override
   void onInit() {
     if (_isLoading.isTrue) {
-      getLocation();
+      getLocation('');
     } else {
       getIndex();
     }
     super.onInit();
   }
 
-  getLocation() async {
+  getLocation(str) async {
     bool isServiceEnabled;
     LocationPermission locationPermission;
 
@@ -70,21 +74,54 @@ class GlobalController extends GetxController {
       }
     }
 
-    //getting the currentposition
-    return await Geolocator.getCurrentPosition(
+    if (str == ''){
+          return await Geolocator.getCurrentPosition(
             desiredAccuracy: LocationAccuracy.high)
         .then((value) {
       //update our latitude and longitude
       _latitude.value = value.latitude;
       _longitude.value = value.longitude;
       //calling weather api
-      return FetchWeatherAPI()
-          .processData(value.latitude, value.longitude)
-          .then((value) {
-        weatherData.value = value;
-        _isLoading.value = false;
-      });
+        _isLoading.value = true;
+        return FetchWeatherAPI()
+            .processData(value.latitude, value.longitude)
+            .then((value) {
+          weatherData.value = value;
+          _isLoading.value = false;
+        });
+      
     });
+    }else {
+       //getting the currentposition
+ 
+      //calling weather api
+        _isLoading.value = true;
+        return FetchWeatherAPI()
+            .processData(_latitude.value, _longitude.value)
+            .then((value) {
+          weatherData.value = value;
+          _isLoading.value = false;
+        });
+    }
+   
+  }
+
+  changeCoordinates(str) async {
+    //latitude substring(17, 22)
+    List<Location> locations = await locationFromAddress(str);
+    var lat = double.parse(double.parse(locations
+            .toString()
+            .split(',')[0]
+            .replaceAll("[      Latitude: ", ""))
+        .toStringAsFixed(2));
+    var lon = double.parse(double.parse(locations
+            .toString()
+            .split(',')[1]
+            .replaceAll("      Longitude: ", ""))
+        .toStringAsFixed(2));
+    _latitude.value = lat;
+    _longitude.value = lon;
+    getLocation(str);
   }
 
   RxInt getIndex() {

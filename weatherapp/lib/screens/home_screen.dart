@@ -9,6 +9,7 @@ import 'package:weatherapp_starter_project/widgets/header_widget.dart';
 import 'package:weatherapp_starter_project/widgets/hourly_data_widget.dart';
 import '../controller/global_controller.dart';
 import '../widgets/daily_data_widget.dart';
+import 'package:geocoding/geocoding.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -24,17 +25,28 @@ class _HomeScreenState extends State<HomeScreen> {
   final GlobalController globalController =
       Get.put(GlobalController(), permanent: true);
   @override
-
-
-
+  getLocations(str) {
+    if (str != "") {
+      if (str == searchValue) {
+        globalController.changeCoordinates(searchValue);
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const HomeScreen()),
+        );
+      }
+      searchValue = str;
+      print(searchValue);
+    }
+  }
 
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: EasySearchBar(
-          title: const Text('search'),
-          onSearch: (value) => setState(() => _suggestions[0]=   getCity(value).toString()  /*searchValue = value*/   ),
-          suggestions: _suggestions
-        ),
+        title: const Text('search'),
+        onSearch: (value) => getLocations(
+            value), //setState(() => _suggestions[0] =   value  /*searchValue = value*/   ),
+        
+      ),
       body: SafeArea(
         child: Obx(() => globalController.checkLoading().isTrue
             ? const Center(
@@ -51,17 +63,18 @@ class _HomeScreenState extends State<HomeScreen> {
                   CurrentWeatherWidget(
                     weatherDataCurrent:
                         globalController.getData().getCurrentWeather(),
-                    weatherDataHourly: 
+                    weatherDataHourly:
                         globalController.getData().getHourlyWeather(),
                   ),
                   const SizedBox(
                     height: 20,
                   ),
                   HourlyDataWidget(
-                    weatherDataHourly: globalController.getData().getHourlyWeather()),
-
+                      weatherDataHourly:
+                          globalController.getData().getHourlyWeather()),
                   DailyDataWidget(
-                    weatherDataDaily: globalController.getData().getDailyWeather()),
+                      weatherDataDaily:
+                          globalController.getData().getDailyWeather()),
                   Container(
                     height: 1,
                     color: CustomColors.dividerLine,
@@ -69,11 +82,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   const SizedBox(
                     height: 10,
                   ),
-
                 ],
-              )
-            )
-        ),
+              ))),
       ),
     );
   }
