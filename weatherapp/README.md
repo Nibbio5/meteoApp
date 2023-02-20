@@ -1,16 +1,26 @@
-# weatherapp_starter_project
+A weather app that use the open-meteo API
 
-A new Flutter project.
+Once the app is open for the first time a pop-up messa will asl the location permission.
+after allowed the permission the meteo of your city will be shown.
 
-## Getting Started
+in the app bar there is a search bar to see the meteo of other cities.
+it use the geolocator library.
 
-This project is a starting point for a Flutter application.
+After digitated the name of the city you MUST press enter on the keyboard.
+Now the meteo of the city that you choose will appair.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
+
+
+
+
+
+On visual studio code the follow extension are used:
+Pubspec assist,
+json to dart,
+Tanbine AI.
